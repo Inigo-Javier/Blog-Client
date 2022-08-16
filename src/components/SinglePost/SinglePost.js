@@ -17,13 +17,15 @@ export default function SinglePost() {
         }
         fechPostIdPath()
     }, [path])
-    
+
     return (
         <div className='singlePost'>
             <div className='singlePostWrapper'>
-                <img src='https://www.militariazone.com/upload/images/shopprod/25552/a-bridge-too-far-movie-still-featuring-anthony-hopkins_25552_pic1_size4.webp' alt='' className='singlePostImg' />
+                {post.photo && (
+                    <img src={post.photo} alt='' className='singlePostImg' />
+                )}
                 <h1 className='singlePostTitle'>
-                    title a bridge too far
+                    {post.title}
                     <div className='singlePostEdit'>
                         <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
                         <i className="singlePostIcon fa-solid fa-trash-can"></i>
@@ -42,3 +44,6 @@ export default function SinglePost() {
         </div>
     )
 }
+
+
+// 'https://www.militariazone.com/upload/images/shopprod/25552/a-bridge-too-far-movie-still-featuring-anthony-hopkins_25552_pic1_size4.webp'
