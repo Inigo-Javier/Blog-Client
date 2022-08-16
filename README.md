@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+image resource:[Mad Mike Hoare](https://warfarehistorynetwork.com/mad-mike-hoare-how-a-businessman-became-a-legendary-mercenary/)
+
+images loginPage and RegisterPage: [A bridge too far film](https://legendsofsfandfantasyart.blogspot.com/2016/04/a-bridge-too-far-1977.html)
+
+[StrictMode](https://www.youtube.com/watch?v=y0ELkQ3D9sU)
+
+[React Router DOM](https://www.youtube.com/watch?v=8m8Q4wqFez0)
+
+[React Router v6](https://www.youtube.com/watch?v=KKXFmzr0nKk)
+
+
+
+[proxy API](https://www.youtube.com/watch?v=qDndmRvvDJg)
