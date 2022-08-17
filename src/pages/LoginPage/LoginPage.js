@@ -7,14 +7,16 @@ export default function LoginPage() {
             <span className="loginTitle">Login</span>
             <form className='loginForm'>
                 <label>Email</label>
-                <input type="text" placeholder='Enter your email...'></input>
+                <input type="email" placeholder='Enter your email...'
+                    required ></input>
                 <label>Password</label>
-                <input type="password" placeholder='Enter your password...'></input>
+                <input type="password" placeholder='Enter your password...'
+                    required></input>
                 <button className='loginButton'>Login</button>
             </form>
             <button className='loginRegisterButton'>
                 <Link className='Link' to="/registro">Register</Link>
-            </button>   
+            </button>
         </div>
     )
 }
