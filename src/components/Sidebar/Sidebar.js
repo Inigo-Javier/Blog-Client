@@ -5,7 +5,7 @@ export default function Sidebar() {
         <div className='sidebar'>
             <div className='sidebarItem'>
                 <span className='sidebarTitle'>ABOUT ME</span>
-                <img src="https://e3.365dm.com/20/02/2048x1152/skynews-hoare-mike-mercenary_4910308.jpg?bypass-service-worker&20200203072708" alt="Mike Hoare with his personal bodyguard Sergeant Donald Grant in 1964" />
+                <img src="./images/hoare-mike-mercenary.jpg" alt="Mike Hoare with his personal bodyguard Sergeant Donald Grant in 1964" />
                 <p>
                     loremqelrkb
                 </p>
