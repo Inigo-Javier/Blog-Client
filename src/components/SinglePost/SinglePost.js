@@ -12,7 +12,7 @@ export default function SinglePost() {
     useEffect(() => {
         const fechPostIdPath = async () => {
             const response = await axios.get(`${process.env.REACT_APP_API_URL}/posts/${path}`)
-            
+
             setPost(response.data)
         }
         fechPostIdPath()
@@ -21,9 +21,9 @@ export default function SinglePost() {
     return (
         <div className='singlePost'>
             <div className='singlePostWrapper'>
-                {post.photo && (
-                    <img src={post.photo} alt='' className='singlePostImg' />
-                )}
+                
+                    <img src='https:www.militariazone.com/upload/images/shopprod/25552/a-bridge-too-far-movie-still-featuring-anthony-hopkins_25552_pic1_size4.webp' alt='' className='singlePostImg' />
+                
                 <h1 className='singlePostTitle'>
                     {post.title}
                     <div className='singlePostEdit'>
@@ -32,14 +32,10 @@ export default function SinglePost() {
                     </div>
                 </h1>
                 <div className='singlePostInfo'>
-                    <span className='singlePostAutor'>Autor:<b>Safak</b></span>
-                    <span className='singlePostDate'>1 hour ago</span>
+                    <span className='singlePostAutor'>Autor:<b>{post.username}</b></span>
+                    <span className='singlePostDate'>{new Date(post.createdAt).toDateString()}</span>
                 </div>
-                <p className='singlePostDescription'>
-                    Loremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatah
-
-                    Loremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatahLoremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatahLoremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatahLoremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatahLoremmwdcojkwevnwrvwr vgr   bgt3q4cjnyrjn tyc jheathteh eth etahje hjet het h eth etrh eth et heath etrt he th eH ETH ET HEThetheatah
-                </p>
+                <p className='singlePostDescription'>{post.desc}</p>
             </div>
         </div>
     )
