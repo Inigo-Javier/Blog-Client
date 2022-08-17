@@ -21,8 +21,9 @@ export default function SinglePost() {
     return (
         <div className='singlePost'>
             <div className='singlePostWrapper'>
-
-                <img src="../images/bridge-too-far.jpg" alt='' className='singlePostImg' />
+                {post.photo && (
+                    <img src={post.photo} alt='' className='singlePostImg' />
+                )}
 
                 <h1 className='singlePostTitle'>
                     {post.title}
