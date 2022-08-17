@@ -14,7 +14,7 @@ export default function LoginPage() {
             </form>
             <button className='loginRegisterButton'>
                 <Link className='Link' to="/registro">Register</Link>
-            </button>
+            </button>   
         </div>
     )
 }

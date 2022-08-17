@@ -20,9 +20,7 @@ export default function Post({ eachPost }) {
                         <span className='postCategorie'>{eachCategorie.name}</span>
                     ))
                 }
-
                 </div >
-
 
                 <Link to={`/post/${eachPost._id}`} className="Link">
                     {<span className="postTitle">{eachPost.title}</span>}
