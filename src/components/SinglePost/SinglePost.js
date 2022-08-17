@@ -12,7 +12,7 @@ export default function SinglePost() {
     useEffect(() => {
         const fechPostIdPath = async () => {
             const response = await axios.get(`${process.env.REACT_APP_API_URL}/posts/${path}`)
-            console.log(response.data)
+            
             setPost(response.data)
         }
         fechPostIdPath()
