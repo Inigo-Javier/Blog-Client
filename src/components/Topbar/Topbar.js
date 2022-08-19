@@ -45,7 +45,10 @@ export default function TopBar() {
                 {
                     user ?
                         (
-                            <img className='topImg' src='https://static.photocdn.pt/images/articles/2018/05/18/articles/2017_8/how_to_get_started_in_landscape_photography.jpg' alt='beach sunset' />)
+                            <img
+                                className='topImg'
+                                src={user.profilePic}
+                                alt='beach sunset' />)
                         :
                         (<ul className='topList'>
                             <li className='topListItem'>
