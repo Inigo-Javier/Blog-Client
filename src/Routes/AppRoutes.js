@@ -6,11 +6,11 @@ import SettingsPage from '../pages/SettingsPage/SettingsPage'
 import WritePage from '../pages/WritePage/WritePage.js'
 import LoginPage from './../pages/LoginPage/LoginPage.js'
 import SinglePost from '../components/SinglePost/SinglePost'
-import { useContext } from 'react'
-import { Context } from '../context/AuthContext'
 
-const AppRoutes = () => {
-    const { user } = useContext(Context)
+
+
+const AppRoutes = ({user}) => {
+    
     return (
         <>
             <Routes>

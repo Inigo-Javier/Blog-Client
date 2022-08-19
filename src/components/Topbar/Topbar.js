@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Topbar.css'
 
-export default function TopBar() {
+export default function TopBar({ user }) {
 
-    const user = false
 
     return (
         <nav className='top'>
