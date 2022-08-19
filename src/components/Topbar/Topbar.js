@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
 import './Topbar.css'
+import { Context } from './../../context/AuthContext'
+import { useContext } from 'react'
 
-export default function TopBar({ user }) {
+export default function TopBar() {
 
+    const { user, dispatch } = useContext(Context)
+
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+    }
 
     return (
         <nav className='top'>
@@ -26,7 +33,7 @@ export default function TopBar({ user }) {
                     <li className='topListItem'>
                         <Link className='Link' to="/write">WRITE</Link>
                     </li>
-                    <li className='topListItem'>
+                    <li className='topListItem' onClick={handleLogout}>
                         {user && 'LOGOUT'}
                     </li>
                 </ul>
@@ -42,7 +49,7 @@ export default function TopBar({ user }) {
                         :
                         (<ul className='topList'>
                             <li className='topListItem'>
-                                <Link className='Link' to="/inicio-sesion">LOGIN</Link>
+                                <Link className='Link' to="/login">LOGIN</Link>
                             </li>
                             <li className='topListItem'>
                                 <Link className='Link' to="/registro">REGISTER</Link>
