@@ -4,14 +4,13 @@ import { Link } from "react-router-dom";
 
 
 export default function Post({ eachPost }) {
-
-
+    const PF = 'http://localhost:5000/images/'
     return (
         <div className='post'>
 
             {eachPost.photo && (
                 <img
-                    className='postImg' src={eachPost.photo} alt="soldiers at war" />
+                    className='postImg' src={PF + eachPost.photo} alt="soldiers at war" />
             )}
 
             <div className='postInfo'>
