@@ -45,19 +45,18 @@ export default function TopBar() {
                 {
                     user ?
                         (
-                            <img
-                                className='topImg'
-                                src={user.profilePic}
-                                alt='beach sunset' />)
-                        :
-                        (<ul className='topList'>
-                            <li className='topListItem'>
-                                <Link className='Link' to="/login">LOGIN</Link>
-                            </li>
-                            <li className='topListItem'>
-                                <Link className='Link' to="/registro">REGISTER</Link>
-                            </li>
-                        </ul>)
+                            <Link to="/ajustes">
+                                <img className="topImg" src={ user.profilePic} alt="" />
+                            </Link>
+                        ) : (
+                            <ul className='topList'>
+                                <li className='topListItem'>
+                                    <Link className='Link' to="/login">LOGIN</Link>
+                                </li>
+                                <li className='topListItem'>
+                                    <Link className='Link' to="/registro">REGISTER</Link>
+                                </li>
+                            </ul>)
                 }
                 <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
             </div>
