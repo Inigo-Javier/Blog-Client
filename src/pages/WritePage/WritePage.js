@@ -83,4 +83,3 @@ export default function WritePage() {
 }
 
 
-// 'https://warfarehistorynetwork.com/wp-content/uploads/M-Soldiers-1-4CJun06.jpg'

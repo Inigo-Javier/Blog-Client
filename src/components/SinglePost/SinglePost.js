@@ -5,14 +5,17 @@ import './SinglePost.css'
 import { Context } from './../../context/AuthContext'
 
 export default function SinglePost() {
+
     const location = useLocation()
     const path = location.pathname.split("/")[2]
-    const [post, setPost] = useState({})
     const PF = 'http://localhost:5000/images/'
-    const { user } = useContext(Context)
+
+    const [post, setPost] = useState({})
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
     const [updateMode, setUpdateMode] = useState(false)
+
+    const { user } = useContext(Context)
 
     useEffect(() => {
         const fechPostIdPath = async () => {

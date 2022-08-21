@@ -46,7 +46,10 @@ export default function TopBar() {
                     user ?
                         (
                             <Link to="/ajustes">
-                                <img className="topImg" src={ user.profilePic} alt="" />
+                                <img
+                                    className="topImg"
+                                    src={user.profilePic}
+                                    alt="" />
                             </Link>
                         ) : (
                             <ul className='topList'>
