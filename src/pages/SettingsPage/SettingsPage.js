@@ -11,9 +11,8 @@ export default function SettingsPage() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [success, setSuccess] = useState(false)
-    
+
     const { user, dispatch } = useContext(Context)
-    
     const PF = "http://localhost:5000/images/"
 
     const handleSubmit = async (event) => {
@@ -62,7 +61,7 @@ export default function SettingsPage() {
                         className='settingsPP'>
                         <img
                             src={file ? URL.createObjectURL(file) : PF + user.profilePic}
-                            alt='landscape' />
+                            alt='' />
 
                         <label htmlFor='fileInput'>
 

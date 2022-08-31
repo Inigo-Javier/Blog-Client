@@ -61,3 +61,9 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+p::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
