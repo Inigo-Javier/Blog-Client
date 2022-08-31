@@ -11,10 +11,10 @@ export default function SettingsPage() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [success, setSuccess] = useState(false)
-
-    const PF = "http://localhost:5000/images/"
-
+    
     const { user, dispatch } = useContext(Context)
+    
+    const PF = "http://localhost:5000/images/"
 
     const handleSubmit = async (event) => {
         event.preventDefault()
