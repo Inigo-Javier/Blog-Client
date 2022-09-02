@@ -52,6 +52,14 @@
     cursor: pointer;
 }
 
+.topListItemLogOut {
+    color: red;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .topSearchIcon {
     cursor: pointer;
     color: #666;

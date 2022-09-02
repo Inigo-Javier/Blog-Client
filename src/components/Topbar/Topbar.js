@@ -34,8 +34,8 @@ export default function TopBar() {
                     <li className='topListItem'>
                         <Link className='Link' to="/write">WRITE</Link>
                     </li>
-                    <li className='topListItem' onClick={handleLogout}>
-                        {user && 'LOGOUT'}
+                    <li className='topListItemLogOut' onClick={handleLogout}>
+                        {user && 'Exit'}
                     </li>
                 </ul>
             </div>
