@@ -8,12 +8,15 @@ import { useLocation } from 'react-router-dom'
 
 export default function HomePage() {
 
+
+
+
     const [posts, setPosts] = useState([]);
     const { search } = useLocation()
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/posts${search}`);
+            const response = await axios.get(`https://inigo-blog.herokuapp.com/api/posts${search}`);
 
             setPosts(response.data)
         };
@@ -29,4 +32,8 @@ export default function HomePage() {
             </div>
         </>
     )
+
+
+
+
 }

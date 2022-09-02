@@ -8,7 +8,7 @@ export default function SinglePost() {
 
     const location = useLocation()
     const path = location.pathname.split("/")[2]
-    const PF = 'http://localhost:5000/images/'
+    const PF = 'https://inigo-blog.herokuapp.com/images/'
 
     const [post, setPost] = useState({})
     const [title, setTitle] = useState("")
@@ -19,7 +19,7 @@ export default function SinglePost() {
 
     useEffect(() => {
         const fechPostIdPath = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/posts/${path}`)
+            const response = await axios.get(`https://inigo-blog.herokuapp.com/api/posts/${path}`)
 
             setPost(response.data)
             setTitle(response.data.title)
@@ -30,7 +30,7 @@ export default function SinglePost() {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`${process.env.REACT_APP_API_URL}/posts/${path}`, {
+            await axios.delete(`https://inigo-blog.herokuapp.com/api/posts/${path}`, {
                 data: { username: user.username },
             })
             window.location.replace("/")
@@ -40,7 +40,7 @@ export default function SinglePost() {
 
     const handleUpdate = async () => {
         try {
-            await axios.put(`${process.env.REACT_APP_API_URL}/posts/${post._id}`, {
+            await axios.put(`https://inigo-blog.herokuapp.com/api/posts/${post._id}`, {
                 username: user.username,
                 title,
                 desc,

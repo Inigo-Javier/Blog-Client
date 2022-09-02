@@ -31,7 +31,7 @@ export default function SettingsPage() {
             data.append("file", file)
             updatedUser.profilePic = filename
             try {
-                await axios.post(`${process.env.REACT_APP_API_URL}/upload`, data)
+                await axios.post(`https://inigo-blog.herokuapp.com/api/upload`, data)
             } catch (err) {
 
             }
