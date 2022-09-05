@@ -18,7 +18,7 @@ const AppRoutes = () => {
                 <Route path='/login' element={user ? <HomePage /> : <LoginPage />} />
                 <Route path='*' element={<Navigate to="/" />} />
                 <Route path='/registro' element={user ? <HomePage /> : <RegisterPage />} />
-                <Route path='/ajustes' element={user ? <SettingsPage /> : <HomePage />} />
+                <Route path='/ajustes' element={user ? <SettingsPage /> : <LoginPage />} />
                 <Route path='/write' element={user ? <WritePage /> : <RegisterPage />} />
                 <Route path='/about' element={<Sidebar />} />
                 <Route path='/post/:PostId' element={<SinglePost />} />
